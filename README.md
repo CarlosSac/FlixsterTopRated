@@ -1,16 +1,16 @@
-# Android Project 4 - *Name of App Here*
+# Android Project 4 - *Flixster - Top Rated*
 
-Submitted by: **Your Name Here**
+Submitted by: **Carlos Sac**
 
-**Name of your app** is a movie browsing app that allows users to browse ... [TODO] 
+**Flixster** is a movie browsing app that allows users to browse top rated movied of all time.  
 
-Time spent: **X** hours spent in total
+Time spent: **6** hours spent in total
 
 ## Required Features
 
 The following **required** functionality is completed:
 
-- [ ] **Choose any endpoint on The MovieDB API except `now_playing`**
+- [x] **Choose any endpoint on The MovieDB API except `now_playing`**
   - Chosen Endpoint: `[TODO: FILL ME IN TO GET CREDIT]`
 - [] **Make a request to your chosen endpoint and implement a RecyclerView to display all entries**
 - [ ] **Use Glide to load and display at least one image per entry**
