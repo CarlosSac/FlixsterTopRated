@@ -31,7 +31,7 @@ class MainActivity : AppCompatActivity() {
         params["api_key"] = "a07e22bc18f5cb106bfe4cc1f83ad8ed"
 
         client[
-            "https://api.themoviedb.org/3/movie/now_playing", params,
+            "https://api.themoviedb.org/3/movie/top_rated", params,
             object : JsonHttpResponseHandler() {
 
                 override fun onSuccess(
@@ -42,6 +42,7 @@ class MainActivity : AppCompatActivity() {
                     val moviesRawJSON : String = json.jsonObject.get("results").toString()
                     val gson = Gson()
                     val arrayMovieType = object :TypeToken<List<Movie>>() {}.type
+
                     val models : List<Movie> = gson.fromJson(moviesRawJSON, arrayMovieType)
                     recyclerView.adapter = MovieAdapter(models)
                 }
